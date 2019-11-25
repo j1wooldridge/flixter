@@ -1,6 +1,10 @@
 class Instructor::LessonsController < ApplicationController
   before_action :authenticate_user!
   before_action :require_authorized_for_current_section
+  before_action :require_authorized_for_current_lesson
+
+  def show
+  end
 
   def new
     @lesson = Lesson.new
@@ -19,6 +23,11 @@ class Instructor::LessonsController < ApplicationController
     end
   end
 
+  def require_authorized_for_current_lesson
+    if current_user.enrolled_in != current_user
+      redirect_to static_pages_index, alert: 'Error Message Here'
+  end 
+
   helper_method :current_section
   def current_section
     @current_section ||= Section.find(params[:section_id])
@@ -27,4 +36,9 @@ class Instructor::LessonsController < ApplicationController
   def lesson_params
     params.require(:lesson).permit(:title, :subtitle, :video)
   end
+  
+  helper_method :current_lesson
+  def current_user.enrolled_in
+    @current_user.enrolled_in ||= Current_user.enrolled_in.find(params[:id])
+  end 
 end
