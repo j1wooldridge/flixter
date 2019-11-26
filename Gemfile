@@ -81,3 +81,6 @@ gem 'carrierwave-aws'
 gem 'stripe'
 
 gem 'ranked-model'
+gem 'rubocop', require: false
+
+gem 'jquery-ui-rails'
