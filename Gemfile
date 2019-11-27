@@ -84,3 +84,4 @@ gem 'ranked-model'
 gem 'rubocop', require: false
 
 gem 'jquery-ui-rails'
+gem "font-awesome-rails"
