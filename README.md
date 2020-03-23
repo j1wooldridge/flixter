@@ -8,6 +8,6 @@ Visit https://flixter-jacques-wooldridge.herokuapp.com/ to deploy the app.
 
 Screenshot Version
 
-![Flixter App Screenshot](images/Flixter_image.png "Screenshot") 
+![Flixter App Screenshot](app/images/Flixter_image.png "Screenshot") 
 
 Jacques Wooldridge.
