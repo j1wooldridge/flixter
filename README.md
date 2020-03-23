@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Flixter is an interactive two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships. The goal was to build a app using html, css, javascript, Ruby, Ruby on Rails to highlight skills aquired during my full stack web developer course.
 
-Things you may want to cover:
+Deployed Version
 
-* Ruby version
+Visit https://flixter-jacques-wooldridge.herokuapp.com/ to deploy the app.
 
-* System dependencies
+Screenshot Version
 
-* Configuration
+![Flixter App Screenshot](images/Flixter_image.png "Screenshot") 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Jacques Wooldridge.
